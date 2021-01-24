@@ -9,9 +9,8 @@ public enum EmBussinessError implements CommonError {
     //通用错误类型00001
     UNKNOWN_ERROR(10002,"未知错误"),
     //
-    USER_NOT_EXIST(20001,"用户不存在 ")
-
-    ;
+    USER_NOT_EXIST(20001,"用户不存在 "),
+    USER_LOGIN_FAIL(20002,"用户登录失败");
 
   private EmBussinessError(int errCode,String errMsg) {
       this.errCode = errCode;
@@ -23,7 +22,6 @@ public enum EmBussinessError implements CommonError {
     public int getErrCode() {
         return errCode;
     }
-
     @Override
     public String getErrMsg() {
         return errMsg;

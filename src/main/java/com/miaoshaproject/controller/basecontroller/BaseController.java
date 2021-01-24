@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BaseController {
+public class BaseController{
 
+
+    public final static String CONTENT_TYPE_FORMED = "application/x-www-form-urlencoded";
     //定义一个ExceptionHandler 解决未被controller层吸收的异常
 
     @ExceptionHandler(Exception.class)

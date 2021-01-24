@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 @MapperScan("com.miaoshaproject.dao")
 public class App {
 
-
     @Autowired
     private UserDOMapper userDOMapper;
 
