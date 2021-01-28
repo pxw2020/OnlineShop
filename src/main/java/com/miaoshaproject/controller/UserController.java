@@ -60,8 +60,7 @@ public class UserController extends BaseController {
 
         //将登陆成功凭证加入session
         this.httpServletRequest.getSession().setAttribute("IS_LOGIN",true);
-        this.httpServletRequest.getSession().setAttribute("LOGIN_USER",true);
-
+        this.httpServletRequest.getSession().setAttribute("LOGIN_USER",userModel);
         return new CommonReturnType().create(null);
     }
 
@@ -75,7 +74,7 @@ public class UserController extends BaseController {
                                      @RequestParam("password") String password) throws BusinessException, UnsupportedEncodingException, NoSuchAlgorithmException {
 
 
-        //TODO 验证手机号和otpCode是否匹配
+        // 验证手机号和otpCode是否匹配
 
         String inSessionOtpCode = (String)this.httpServletRequest.getSession().getAttribute(telephone);
         if(!com.alibaba.druid.util.StringUtils.equals(otpCode,inSessionOtpCode)) {
@@ -86,10 +85,10 @@ public class UserController extends BaseController {
         userModel.setAge(age);
         userModel.setGender(gender);
         userModel.setTelephone(telephone);
+        //TODO 关联第三方ID、还没做
         userModel.setThirdPartyId("1");
         userModel.setRegisterMode("byphone");
         userModel.setEncrptPassword(this.EncodeByMD5(password));
-
         userService.register(userModel);
         return new CommonReturnType().create(null);
     }
@@ -113,7 +112,7 @@ public class UserController extends BaseController {
         //TODO 将验证码和对应用户手机号关联(redis存储-适合分布式）
         //暂时使用httpSession绑定opt和手机号
         httpServletRequest.getSession().setAttribute(telephone,otpCode);
-    String s = (String) httpServletRequest.getSession().getAttribute(telephone);
+        String s = (String) httpServletRequest.getSession().getAttribute(telephone);
         //TODO 通过短信渠道发送otp验证码（省略）
 
         System.out.println(""+telephone+"  otp短信验证码："+otpCode);
@@ -127,7 +126,6 @@ public class UserController extends BaseController {
 
         UserModel userModel = userService.getUserByID(id);
         if(userModel==null) {
-            //userModel.setEncrptPassword("22");
             throw new BusinessException(EmBussinessError.USER_NOT_EXIST);
         }
         UserVO userVO = convertFromModel(userModel);

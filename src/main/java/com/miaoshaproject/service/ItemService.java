@@ -7,7 +7,9 @@ import java.util.List;
 
 public interface ItemService {
     //创建商品
-    public ItemModel createItem(ItemModel itemModel) throws BusinessException;
-    public List<ItemModel> listItem();
-    public ItemModel getItemByID(Integer id);
+    ItemModel createItem(ItemModel itemModel) throws BusinessException;
+    List<ItemModel> listItem();
+    ItemModel getItemByID(Integer id);
+    boolean decreaseStock(Integer itemId,Integer amount);
+    void increaseSales(Integer itemId,Integer amount);
 }
