@@ -27,6 +27,7 @@ public class OrderDO {
      * @mbg.generated Wed Jan 27 20:53:39 GMT+08:00 2021
      */
     private Integer itemId;
+    private Integer promoId;
 
     /**
      *
@@ -197,5 +198,13 @@ public class OrderDO {
      */
     public void setOrderPrice(Double orderPrice) {
         this.orderPrice = orderPrice;
+    }
+
+    public Integer getPromoId() {
+        return promoId;
+    }
+
+    public void setPromoId(Integer promoId) {
+        this.promoId = promoId;
     }
 }

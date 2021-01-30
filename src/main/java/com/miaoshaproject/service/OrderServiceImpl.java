@@ -6,6 +6,7 @@ import com.miaoshaproject.error.BusinessException;
 import com.miaoshaproject.error.EmBussinessError;
 import com.miaoshaproject.model.ItemModel;
 import com.miaoshaproject.model.OrderModel;
+import com.miaoshaproject.model.PromoModel;
 import com.miaoshaproject.model.UserModel;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,8 @@ public class OrderServiceImpl implements OrderService {
     private UserServiceImpl userService;
 
     @Autowired
+    private PromoServiceImpl promoService;
+    @Autowired
     private ItemServiceImpl itemService;
     @Autowired
     private OrderDOMapper orderDOMapper;
@@ -33,7 +36,7 @@ public class OrderServiceImpl implements OrderService {
     private SequenceDOMapper sequenceDOMapper;
     @Override
     @Transactional
-    public OrderModel createOrder(Integer userId, Integer itemId, Integer amount) throws BusinessException {
+    public OrderModel createOrder(Integer userId, Integer itemId,Integer promoId, Integer amount) throws BusinessException {
 
         //1。校验下单状态  商品是否存在 用户是否合法 购买数量是否正确
         ItemModel itemModel = itemService.getItemByID(itemId);
@@ -47,6 +50,19 @@ public class OrderServiceImpl implements OrderService {
         }
         if (amount<=0||amount>99) {
             throw new BusinessException(EmBussinessError.PARAMETER_VALIDATION_ERROR,"购买数量不正确");
+        }
+
+        //校验是否有秒杀活动
+
+        if (promoId!=null) {
+            //校验对应活动是否适用该商品
+           if (promoId.intValue()!=itemModel.getPromoModel().getId()){
+               throw new BusinessException(EmBussinessError.PARAMETER_VALIDATION_ERROR,"秒杀活动信息不正确");
+           }else if(itemModel.getPromoModel().getStatus()!=2){
+               //校验活动是否正在进行中
+               throw new BusinessException(EmBussinessError.PARAMETER_VALIDATION_ERROR,"活动还未开始");
+
+           }
         }
         //2.落单减库存 支付减库存
         Boolean aBoolean = itemService.decreaseStock(itemId,amount);
@@ -63,8 +79,15 @@ public class OrderServiceImpl implements OrderService {
         orderModel.setItemId(itemId);
         orderModel.setUserId(userId);
         orderModel.setAmount(amount);
-        orderModel.setItemPrice(itemModel.getPrice());
-        orderModel.setOrderPrice(itemModel.getPrice().multiply(BigDecimal.valueOf(amount)));
+        orderModel.setPromoId(promoId);
+        if (promoId!=null){
+            orderModel.setItemPrice(itemModel.getPromoModel().getPromoItemPrice());
+            orderModel.setOrderPrice(itemModel.getPromoModel().getPromoItemPrice().multiply(BigDecimal.valueOf(amount)));
+
+        }else{
+            orderModel.setItemPrice(itemModel.getPrice());
+            orderModel.setOrderPrice(itemModel.getPrice().multiply(BigDecimal.valueOf(amount)));
+        }
         OrderDO orderDO = convertFromOrderModel(orderModel);
         orderDOMapper.insertSelective(orderDO);
 

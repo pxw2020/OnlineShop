@@ -2,32 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a2b43ea-413e-40e1-95d7-36c593624cf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/model/PromoModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/PromoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/PromoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/ItemDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/ItemDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/ItemStockDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dao/ItemStockDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/error/EmBussinessError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/error/EmBussinessError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/viewobject/ItemVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/viewobject/ItemVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/OrderDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/dataobject/OrderDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/model/ItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/model/ItemModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/model/OrderModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/ItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ItemDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ItemDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ItemStockDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ItemStockDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/OrderDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/OrderDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/ItemController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dao/ItemStockDOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/dao/ItemStockDOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/EmBussinessError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/error/EmBussinessError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/ItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/viewobject/ItemVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/controller/viewobject/ItemVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/model/ItemModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/model/ItemModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/ItemServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miaoshaproject/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ItemStockDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ItemStockDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserPasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserPasswordDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,10 +182,10 @@
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
     <state x="-3250" y="-957" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611028615688" />
-    <state x="-2753" y="-899" key="#com.intellij.ide.util.MemberChooser" timestamp="1611840170178">
+    <state x="-2753" y="-899" key="#com.intellij.ide.util.MemberChooser" timestamp="1611982591814">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state x="-2753" y="-899" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611840170178" />
+    <state x="-2753" y="-899" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611982591814" />
     <state x="-2952" y="-686" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1611812358787">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
@@ -211,42 +207,42 @@
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
     <state x="-2958" y="-855" key="FileChooserDialogImpl/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611136637826" />
-    <state width="884" height="335" key="GridCell.Tab.0.bottom" timestamp="1611842999904">
+    <state width="884" height="229" key="GridCell.Tab.0.bottom" timestamp="1611896569866">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.0.bottom/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999904" />
+    <state width="884" height="229" key="GridCell.Tab.0.bottom/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611896569866" />
     <state width="724" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610887813880" />
-    <state width="884" height="335" key="GridCell.Tab.0.center" timestamp="1611842999904">
+    <state width="884" height="229" key="GridCell.Tab.0.center" timestamp="1611896569866">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.0.center/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999904" />
+    <state width="884" height="229" key="GridCell.Tab.0.center/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611896569866" />
     <state width="724" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610887813880" />
-    <state width="884" height="335" key="GridCell.Tab.0.left" timestamp="1611842999904">
+    <state width="884" height="229" key="GridCell.Tab.0.left" timestamp="1611896569866">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.0.left/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999904" />
+    <state width="884" height="229" key="GridCell.Tab.0.left/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611896569866" />
     <state width="724" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610887813880" />
-    <state width="884" height="335" key="GridCell.Tab.0.right" timestamp="1611842999904">
+    <state width="884" height="229" key="GridCell.Tab.0.right" timestamp="1611896569866">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.0.right/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999904" />
+    <state width="884" height="229" key="GridCell.Tab.0.right/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611896569866" />
     <state width="724" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610887813880" />
-    <state width="884" height="335" key="GridCell.Tab.1.bottom" timestamp="1611842999465">
+    <state width="884" height="335" key="GridCell.Tab.1.bottom" timestamp="1611895221793">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.1.bottom/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999465" />
-    <state width="884" height="335" key="GridCell.Tab.1.center" timestamp="1611842999464">
+    <state width="884" height="335" key="GridCell.Tab.1.bottom/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611895221793" />
+    <state width="884" height="335" key="GridCell.Tab.1.center" timestamp="1611895221793">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.1.center/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999464" />
-    <state width="884" height="335" key="GridCell.Tab.1.left" timestamp="1611842999464">
+    <state width="884" height="335" key="GridCell.Tab.1.center/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611895221793" />
+    <state width="884" height="335" key="GridCell.Tab.1.left" timestamp="1611895221793">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.1.left/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999464" />
-    <state width="884" height="335" key="GridCell.Tab.1.right" timestamp="1611842999465">
+    <state width="884" height="335" key="GridCell.Tab.1.left/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611895221793" />
+    <state width="884" height="335" key="GridCell.Tab.1.right" timestamp="1611895221793">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state width="884" height="335" key="GridCell.Tab.1.right/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842999465" />
+    <state width="884" height="335" key="GridCell.Tab.1.right/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611895221793" />
     <state x="598" y="76" key="Maven.ArtifactSearchDialog" timestamp="1610882003592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -255,10 +251,10 @@
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
     <state width="470" height="438" key="XDebugger.FullValuePopup/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611493764758" />
-    <state x="-2895" y="-773" key="com.intellij.ide.util.TipDialog" timestamp="1611836682738">
+    <state x="-2895" y="-773" key="com.intellij.ide.util.TipDialog" timestamp="1611980317069">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state x="-2895" y="-773" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611836682738" />
+    <state x="-2895" y="-773" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611980317069" />
     <state x="-3189" y="-971" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611376750815">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
@@ -276,10 +272,10 @@
     </state>
     <state x="-2945" y="-856" width="672" height="677" key="run.anything.popup/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611751021605" />
     <state x="805" y="193" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610885395956" />
-    <state x="-2938" y="-910" width="672" height="678" key="search.everywhere.popup" timestamp="1611842252116">
+    <state x="-2938" y="-910" width="672" height="678" key="search.everywhere.popup" timestamp="1611982498753">
       <screen x="-3840" y="-1072" width="1707" height="920" />
     </state>
-    <state x="-2938" y="-910" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611842252116" />
+    <state x="-2938" y="-910" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-3840.-1072.1707.920@-3840.-1072.1707.920" timestamp="1611982498753" />
     <state x="3" y="-1998" key="search.everywhere.popup/0.0.1536.824/-898.-2160.1707.920@-898.-2160.1707.920" timestamp="1611026418150" />
     <state x="811" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610887810687" />
   </component>
@@ -313,32 +309,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/ItemController.java</url>
-          <line>42</line>
+          <line>43</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/controller/OrderController.java</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderServiceImpl.java</url>
-          <line>38</line>
+          <line>41</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderServiceImpl.java</url>
-          <line>43</line>
+          <line>46</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/OrderServiceImpl.java</url>
-          <line>51</line>
+          <line>67</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/miaoshaproject/service/ItemServiceImpl.java</url>
-          <line>89</line>
+          <line>103</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>

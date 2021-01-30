@@ -4,9 +4,11 @@ import com.miaoshaproject.dao.ItemDOMapper;
 import com.miaoshaproject.dao.ItemStockDOMapper;
 import com.miaoshaproject.dataobject.ItemDO;
 import com.miaoshaproject.dataobject.ItemStockDO;
+import com.miaoshaproject.dataobject.PromoDO;
 import com.miaoshaproject.error.BusinessException;
 import com.miaoshaproject.error.EmBussinessError;
 import com.miaoshaproject.model.ItemModel;
+import com.miaoshaproject.model.PromoModel;
 import com.miaoshaproject.validator.ValidationResult;
 import com.miaoshaproject.validator.ValidatorImpl;
 import org.springframework.beans.BeanUtils;
@@ -28,6 +30,9 @@ public class ItemServiceImpl implements ItemService {
     private ItemStockDOMapper itemStockDOMapper;
     @Autowired
     private ValidatorImpl validation;
+
+    @Autowired
+    private PromoServiceImpl promoService;
 
     @Override
     @Transactional
@@ -70,8 +75,17 @@ public class ItemServiceImpl implements ItemService {
     public ItemModel getItemByID(Integer id) {
 
         ItemDO itemDO = itemDOMapper.selectByPrimaryKey(id);
+        if(itemDO == null)
+            return null;
+
+
         ItemStockDO itemStockDO = itemStockDOMapper.selectByItemID(itemDO.getId());
         ItemModel itemModel = convertModelFromDataObject(itemDO,itemStockDO);
+
+        //获取该商品秒杀活动的信息
+        PromoModel promoModel = promoService.getPromoByItemId(itemDO.getId());
+        if (promoModel!=null&&promoModel.getStatus()!=3)
+            itemModel.setPromoModel(promoModel);
         return itemModel;
     }
 
